@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>CatTheCat</title>
+
+    <link rel="stylesheet" type="text/css" href="exercicio3_estilos_2_2.css">
+    <link rel="icon" href="Logo_2.png">
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="exercicio3_0154_1_2.html">CatTheCat</a></li>
+            <li><a class="active" href="exercicio3_0154_2_2.html">Desenhos</a></li>
+            <li><a href="exercicio3_0154_3_2.html">Vídeos</a></li>
+            <li><a href="exercicio3_0154_4_2.html">Projetos</a></li>
+            <li style="float:right"><a href="exercicio3_0154_5_2.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <img class="image" src="Hello%20Cat_2.gif" alt="Hello Cat" style="width:60px;height:60px;">
+
+    <div class="content">
+
+        <h2 class="title">Desenhos</h2>
+
+        <div class="texto"> Aqui vou mostrar alguns dos meus melhores desenhos digitais. Os meus desenhos são inspirados no estilo de música "Kpop" e nos desenhos japoneses "Animes". Eu faço os meus desenhos no programa chamado "Medibang" e ajusto depois os meus desenhos no "Photoshop".
+        </div>
+
+
+        <br>
+
+        <p class="kpop">Exemplos de desenhos Kpop:</p>
+        <div class="row">
+            <div class="column">
+                <img id="myImg" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/97c157da-a757-4c07-899e-a5c9df78cc6b/ddy3wap-06de9376-596a-4e81-a94d-6bfb0646f33a.png/v1/fill/w_1280,h_1931,q_80,strp/agust_d_king_com_assinatura_by_catarinaalexandrav_ddy3wap-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0xOTMxIiwicGF0aCI6IlwvZlwvOTdjMTU3ZGEtYTc1Ny00YzA3LTg5OWUtYTVjOWRmNzhjYzZiXC9kZHkzd2FwLTA2ZGU5Mzc2LTU5NmEtNGU4MS1hOTRkLTZiZmIwNjQ2ZjMzYS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.l3pjOsa7tmgTiHkKIulj69y0ymHv7fFhaQEEoQh03zI" style="width:1500%">
+            </div>
+            <div class="column2">
+                <img id="myImg2" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/97c157da-a757-4c07-899e-a5c9df78cc6b/ddw6buu-0799e96b-caad-4f1e-bfb4-c48dd36430ec.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTdjMTU3ZGEtYTc1Ny00YzA3LTg5OWUtYTVjOWRmNzhjYzZiXC9kZHc2YnV1LTA3OTllOTZiLWNhYWQtNGYxZS1iZmI0LWM0OGRkMzY0MzBlYy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.LYc-yDtfjI085Sv-1ItaQAHO0aG7xrSUsVSDRjbc0K8" style="width:1300%">
+            </div>
+            <div class="column3">
+                <img id="myImg3" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/97c157da-a757-4c07-899e-a5c9df78cc6b/ddfzpoz-16d098a5-7efc-4d54-9de9-ce8abda06a30.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOTdjMTU3ZGEtYTc1Ny00YzA3LTg5OWUtYTVjOWRmNzhjYzZiXC9kZGZ6cG96LTE2ZDA5OGE1LTdlZmMtNGQ1NC05ZGU5LWNlOGFiZGEwNmEzMC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.NuFLQG1naFvZiZ5ttBPV7cAZgnCbmYZsSJXzPp65r4Q" style="width:1300%">
+            </div>
+
+
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+        </script>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg2");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg3");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+        </script>
+
+
+        <p class="anime">Exemplos de desenhos Anime:</p>
+        <div class="row">
+            <div class="column4">
+                <img id="myImg4" src="Kuroo%20Shirtless_2.jpg" style="width:1500%">
+            </div>
+            <div class="column5">
+                <img id="myImg5" src="Ainda%20a%20fazer_2.png" style="width:1300%">
+            </div>
+
+        </div>
+
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg4");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+        </script>
+
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg5");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+        </script>
+
+
+
+    </div>
+
+
+    <div class="footer">
+        <p>Conta</p>
+        <p class="link"><b><a href="https://www.youtube.com/channel/UCr0FRIO8KK4CK4TAyANaQmg?view_as=subscriber" target="_blank">CatTheCat Youtube</a></b></p>
+        <img src="Youtube%20Icon_2.png" alt="Youtube Icon" style="width:40px;height:40px;">
+    </div>
+
+</body>
+
+</html>
